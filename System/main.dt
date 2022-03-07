@@ -1,0 +1,39 @@
+# Main
+# Clear screen
+clear()
+print("Welcome to Doto", version)
+
+while True:
+	# Ignore errors
+	try:
+		# Input command
+		if debug == True:
+			# True
+			print(os.getcwd(), end = "> ")
+		else:
+			# False
+			print("->", end = " ")
+
+		# Read command
+		cmd = input().split()
+
+		# Main commands
+		# Stop
+		if cmd[0] in ["stop", "exit"]:
+			break
+
+		# Clear
+		elif cmd[0] in "clear":
+			clear()
+
+		# Version
+		elif cmd[0] in ["ver", "version"]:
+			print("Version: Doto", version)
+
+		# Error: Not found
+		else:
+			print(errm, "Command not found")
+
+	# Error: All
+	except BaseException as error:
+		print(end = "")

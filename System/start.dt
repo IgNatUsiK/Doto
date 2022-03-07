@@ -1,0 +1,17 @@
+# Start
+print("Starting Doto...")
+
+# Loading libs and config
+# Main vars
+exec(open("System/Vars.ini", "r").read())
+
+# Libs
+exec(open("System/Lib/prefix.lib", "r").read())
+
+# Imports
+import os
+
+# Add components
+# Functions
+def clear():
+	os.system("cls||clear")
