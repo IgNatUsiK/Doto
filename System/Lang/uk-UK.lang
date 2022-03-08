@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# Ukrainian
+
+msg_start   = "Завантаження Doto..."
+msg_welcome = "Ласкаво просимо до Doto"
+msg_ver     = "Версія:"
+msg_stop    = "Вимкнення Doto..."
+msg_notfnd  = "Команда не знайдена"
+msg_ctrl    = "Не використовуйте Ctrl+C"
