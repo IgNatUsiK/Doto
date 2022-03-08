@@ -1,7 +1,7 @@
-# Main
+# Main sector
 # Clear screen
 clear()
-print("Welcome to Doto", version)
+print(msg_welcome, version)
 
 while True:
 	# Ignore errors
@@ -23,17 +23,23 @@ while True:
 			break
 
 		# Clear
-		elif cmd[0] in "clear":
+		elif cmd[0] == "clear":
 			clear()
 
 		# Version
 		elif cmd[0] in ["ver", "version"]:
-			print("Version: Doto", version)
+			print(msg_ver, version)
+
+		# Check system var
+		elif cmd[0] == "var":
+			exec(f"print({cmd[1]})")
 
 		# Error: Not found
 		else:
-			print(errm, "Command not found")
+			print(rT + errm, msg_not + wT)
 
 	# Error: All
+	except KeyboardInterrupt:
+		print(rT + errm, msg_ctrl + wT, end = "\n\n")
 	except BaseException as error:
 		print(end = "")

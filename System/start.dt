@@ -1,15 +1,19 @@
 # Start
-print("Starting Doto...")
+print(msg_start)
+
+# Imports
+import os, colorama
+
+# Color init
+colorama.init()
 
 # Loading libs and config
 # Main vars
-exec(open("System/Vars.ini", "r").read())
+exec(open("System/Vars.ini", "r", encoding="utf-8").read())
 
 # Libs
-exec(open("System/Lib/prefix.lib", "r").read())
-
-# Imports
-import os
+exec(open("System/Lib/prefix.lib", "r", encoding="utf-8").read())
+exec(open("System/Lib/color.lib", "r", encoding="utf-8").read())
 
 # Add components
 # Functions

@@ -1,1 +1,1 @@
-print("Stoping Doto...")
+print(msg_stop)

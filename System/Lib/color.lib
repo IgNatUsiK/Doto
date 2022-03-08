@@ -1,0 +1,8 @@
+rT = colorama.Fore.RED
+gT = colorama.Fore.GREEN
+yT = colorama.Fore.YELLOW
+bT = colorama.Fore.BLUE
+wT = colorama.Fore.WHITE
+dT = colorama.Fore.BLACK
+mT = colorama.Fore.MAGENTA
+cT = colorama.Fore.CYAN

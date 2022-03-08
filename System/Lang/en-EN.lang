@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# English
+
+msg_start   = "Starting Doto..."
+msg_welcome = "Welcome to Doto"
+msg_ver     = "Version:"
+msg_stop    = "Stoping Doto..."
+msg_notfnd  = "Command not found"
+msg_ctrl    = "Not use Ctrl+C"

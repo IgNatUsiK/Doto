@@ -4,15 +4,17 @@
 # Booting
 try:
 	# Loading config
-	exec(open("syscnf.ini", "r").read())
-	print("Config Loaded...")
+	exec(open("syscnf.ini", "r", encoding="utf-8").read())
+	print("Config loaded...")
+	exec(open(f"System/Lang/{lang}.lang", "r", encoding="utf-8").read())
+	print("Language loaded...")
 
 	# Start
-	exec(open(bootStart, "r").read())
+	exec(open(bootStart, "r", encoding="utf-8").read())
 	# Main
-	exec(open(bootMain, "r").read())
+	exec(open(bootMain, "r", encoding="utf-8").read())
 	# Stop
-	exec(open(bootStop, "r").read())
+	exec(open(bootStop, "r", encoding="utf-8").read())
 
 	# Normal end
 	print("[Successful finish]")

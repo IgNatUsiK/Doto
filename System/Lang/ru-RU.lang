@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# Russian
+
+msg_start   = "Загрузка Doto..."
+msg_welcome = "Добро пожаловать в Doto"
+msg_ver     = "Версия:"
+msg_stop    = "Выключение Doto..."
+msg_notfnd  = "Команда не найдена"
+msg_ctrl    = "Не используйте Ctrl+C"
